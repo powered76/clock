@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clock {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: url('./clock.png');
+    background-size: cover;
+    background-color: #fa6e18;
+     
+    
+}
+.clock-h,
+.clock-m,
+.clock-s,
+.clock-nail,
+.dayOftheWeek,
+.am-pm-window,
+.date-window,
+.month-window {
+    position: absolute;
+}
+.date-window {
+    width: 26px;
+    height: 21px;
+    border: 2px;
+    background: #7FFF00;
+    left: calc(50% + 20px);
+    top: calc(50% - 10px);
+    text-align: center;
+    border-radius: 50%;
+    color: #e4adf2;
+}
+
+.am-pm-window {
+    width: 26px;
+    height: 23px;
+    border: 2px;
+    background: #7FFF00;
+    left: calc(50% + 50px);
+    top: calc(50% - 10px);
+    text-align: center;
+    border-radius: 50%;
+    color: #e4adf2;
+}
+.dayOftheWeek {
+    width: 40px;
+    height: 21px;
+    border: 2px;
+    background: #7FFF00;
+    left: calc(50% + 30px);
+    top: calc(50% + 15px);
+    text-align: center;
+    border-radius: 50%;
+    color: #e4adf2;
+}
+.month-window {
+    width: 40px;
+    height: 21px;
+    border: 2px;
+    background: #7FFF00;
+    left: calc(50% + 30px);
+    top: calc(50% + 40px);
+    text-align: center;
+    border-radius: 50%;
+    color: #e4adf2;
+
+}
+
+
+
+/* ===========clock hands============ */ 
+.clock-h {
+    width: 16px;
+    height: 120px;
+    border-radius: 300px;
+    background: #9b3665 ;
+    left: calc(50% - 8px);
+    top: calc(50% - 90px);
+    z-index: 1;
+    /* transform: rotate(45deg); */
+    transform-origin: center calc(50% + 30px);
+}
+.clock-m {
+    width: 12px;
+    height: 140px;
+    border-radius: 300px;
+    background: #dd5646;
+    left: calc(50% - 6px);
+    top: calc(50% - 100px);
+    z-index: 1;
+    /* transform: rotate(45deg); */
+    transform-origin: center calc(50% + 30px);
+}
+.clock-s {
+    width: 6px;
+    height: 160px;
+    border-radius: 300px;
+    background: #efa498;
+    left: calc(50% - 3px);
+    top: calc(50% - 110px);
+    z-index: 1;
+    /* transform: rotate(-45deg); */
+    transform-origin: center calc(50% + 30px);
+}
+.clock-nail {
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    border-radius: 50%;
+    background-color: #000;
+}
